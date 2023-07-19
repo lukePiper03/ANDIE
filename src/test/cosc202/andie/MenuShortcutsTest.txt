@@ -1,0 +1,35 @@
+Eszter Scarlett-Herbert 
+
+Menu Shortcuts testing log:
+To test the toolbar creation in the andie class, let us break down the users possible input into all possible cases below. 
+
+Case 1:
+test: Test if the method adds menu items to the each of the individual menus.
+steps:
+    1. Call the createMenu() method.
+    2. Obtain the created menu's for the edit, file, view, draw, transformf, record and filter menu.
+    3. Check the number of menu items added to the different menus
+expected outcome: The method adds the correct number of menu items to the each menu.
+actual outcome: pass 
+
+ 
+Case 2:
+test: if the method sets mnemonics for the menu items based on the associated actions.
+steps:
+    1. Call the createMenu() method.
+    2. Obtain the created menu's for the edit, file, view, draw, transform, record and filter menu.
+    3. Check the mnemonics set for each menu item.
+expected outcome: The method sets the mnemonics for the menu items correctly.
+actual outcome: pass
+note: the shortcuts appear differently on apple and andriod opeerating system, as the CTRL shorcut on andriod appears as CTRL, whereas on apple this appears as ^, functionally this is the same
+
+Case 3:
+test: Verify Setting of Accelerators for Menu Items, i.e that when they are used that they work for each menu item
+steps:
+    1. Call the createMenu() method.
+    2. Obtain the created menu's for the edit, file, view, draw, transform, record and filter menu.
+    3. load an image into the frame 
+    4. Check the accelerators set for each menu item.
+expected outcome: that each accelerator is linked correctly with each feauture and acts as a shorcut.
+actual outcome: pass
+note: orginally for zoom options the plus and minus option were used however due to keyboard differences the plus is now listed as the equals as this is the option accessible wihtout clicking shift

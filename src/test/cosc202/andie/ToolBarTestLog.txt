@@ -1,0 +1,34 @@
+Eszter Scarlett-Herbert 
+
+Toolbar testing log:
+To test the toolbar creation in the andie class, let us break down the users possible input into all possible cases below. 
+
+Case 1:
+test: When the andie programme is loaded, test if the method creates a vertical tool bar.
+steps:
+    1. Call the createToolBar() method.
+    2. Obtain the created tool bar.
+    3. Check if the tool bar orientation is vertical.
+expected outcome: the tool bar is created with a vertical orientation.
+actual outcome: pass 
+
+ 
+Case 2:
+test: if the tool bar is create with buttons that have icons and assigns corresponding actions to them.
+steps:
+    1. Call the createToolBar() method.
+    2. Obtain the created tool bar.
+    3. Check the number of buttons and their properties (icon, action, background color, border).
+expected outcome: The method creates buttons with icons and assigns actions to them. The buttons have the correct background color and the border is removed.
+actual outcome: pass, there are buttons created for each of the specified actions with the correct matching icon
+
+Case 3:
+test: verify if the buttons created, are linked to the actions, i.e does the rotate image option link to a shorcut of rotate image
+steps:
+    1. Call the createToolBar() method.
+    2. Obtain the created tool bar.
+    3. Check the number of buttons and their properties (icon, action, background color, border).
+    4. load an image into the frame 
+    5. check that each button correspond with the correct action
+expected outcome: that each button is linked correctly with each feauture and acts as a shorcut.
+actual outcome: pass

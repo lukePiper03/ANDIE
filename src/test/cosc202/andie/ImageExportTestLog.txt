@@ -1,0 +1,24 @@
+Hannah Srzich 
+
+Image export testing log:
+
+To test the export method, let us break down the users possible input into all possible cases below. 
+
+Case 1:
+If you try and export an image when no image has been opened an error message pops up; "No image exists to be exported. 
+Try opening an image first."
+ 
+Case 2:
+If you open an image of a file of type JPEG, PNG, BMP, WEBMP, or GIF (support by Java), you can select the exported 
+images location and enter a filename. The image will. Then be saved as filename.png in the correct location with all 
+applied filters.
+
+Note that no matte what the user enters as the filename the image export will not break as the only delimiter that is 
+"important" is the .png that the export method does independently.
+
+Case 3:
+If the user try to enter a filename in a directory where filename.png already exsits an error message appears saying 
+"./filename.png file path already exists. Do you want to override the file?" where ./filename.png is the correct file 
+path to where the possible overwriting could have occurred. The user can select yes or no. Yes to overwrite the file 
+path or and no to renter another filename. This process occurs with no restriction on attempts, as most user 
+interfaces do.
